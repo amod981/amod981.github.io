@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to my website. on Home</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Welcome to my website. on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>This page tells about me</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/certification/certification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/certification/certification/</guid>
+      <description>this is my certifications page.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/myprojects/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/myprojects/project1/</guid>
+      <description>this is my 1st Project</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/myprojects/project2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/myprojects/project2/</guid>
+      <description>this is my second project</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/resume/</guid>
+      <description>Education Imperial College Business School&#xA;IIT Madras&#xA;Experience Generated Health Limited&#xA;AI integeration ETL OlaCabs&#xA;Projects Skills Certifications </description>
+    </item>
+    <item>
+      <title>Creating a Chatbot Using Langchain</title>
+      <link>http://localhost:1313/blogs/ai/blog1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/ai/blog1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deploying a machine learning Model with AWS Sagemaker</title>
+      <link>http://localhost:1313/blogs/cloud/awssagemaker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/cloud/awssagemaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Understanding Embeddings and Its Usecases</title>
+      <link>http://localhost:1313/blogs/ai/embeddingsintroduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/ai/embeddingsintroduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Understanding Job Bookmarks in AWS Glue</title>
+      <link>http://localhost:1313/blogs/cloud/gluejobbookmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/cloud/gluejobbookmark/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Home'
+theme = 'ananke'
+
+[menus]
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/About/about.md'
+    weight = 10
+  [[menus.main]]
+    name = 'Resume'
+    pageRef = '/Resume/resume.md'
+    weight = 20
+  [[menus.main]]
+    name = 'Blogs'
+    pageRef = '/Blogs/_index.md'
+    weight = 30
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/myProjects'
+    weight = 40
+  [[menus.main]]
+    name = 'Certifications'
+    pageRef = '/Certification/certification.md'
+    weight = 50
