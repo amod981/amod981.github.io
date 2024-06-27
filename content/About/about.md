@@ -1,1 +1,3 @@
-This page tells about me
+
+## About
+Hello There. I'm Amod Shanker, currently working as a Data Science and AI Engineer at [Generated Health Limited](https://generatedhealth.com/), where I get to indulge my passion for mathematics, statistics, programming, and big data daily. With a knack for data engineering, machine learning, and AI, I thrive on tackling complex challenges and solving production issues. When I'm not diving into datasets, you'll find me on the football or cricket field, or locked in a strategic battle over a chessboard. I'm an old soul at heart, with a deep appreciation for Bob Dylan's music.
