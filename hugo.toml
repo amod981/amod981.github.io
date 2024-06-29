@@ -6,12 +6,8 @@ theme = 'ananke'
 [menus]
   [[menus.main]]
     name = 'About'
-    pageRef = '/About/about.md'
+    pageRef = '/About/index.md'
     weight = 10
-  [[menus.main]]
-    name = 'Resume'
-    pageRef = '/Resume/resume.md'
-    weight = 20
   [[menus.main]]
     name = 'Blogs'
     pageRef = '/Blogs/_index.md'

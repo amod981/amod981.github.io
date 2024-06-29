@@ -9,10 +9,10 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/about/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
-      <description>About Hello There. I&amp;rsquo;m Amod Shanker, currently working as a Data Science and AI Engineer at Generated Health Limited, where I get to indulge my passion for mathematics, statistics, programming, and big data daily. With a knack for data engineering, machine learning, and AI, I thrive on tackling complex challenges and solving production issues. When I&amp;rsquo;m not diving into datasets, you&amp;rsquo;ll find me on the football or cricket field, or locked in a strategic battle over a chessboard.</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;!DOCTYPE html&gt; Here&#39;s Something About Me! &lt;!DOCTYPE html&gt; Greetings! I’m a Data Science &amp;amp; AI Engineer at Generated Health Limited with a master&amp;rsquo;s in business analytics from Imperial College Business School and a BTech in Civil Engineering from IIT Madras. I have a knack for stats, programming, and big data, and I&amp;rsquo;m seasoned in data engineering, machine learning, and AI. Complex challenges are my playground, and I love finding innovative solutions.</description>
     </item>
     <item>
       <title></title>
@@ -40,7 +40,7 @@
       <link>http://localhost:1313/resume/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resume/resume/</guid>
-      <description>Education Imperial College Business School&#xA;IIT Madras&#xA;Experience Generated Health Limited&#xA;AI integeration ETL OlaCabs&#xA;Projects Skills Certifications </description>
+      <description>Socials </description>
     </item>
     <item>
       <title>Creating a Chatbot Using Langchain</title>
