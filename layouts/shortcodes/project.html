@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        .containerProject{
+        .container{
             display: flex;
-            width: 100%;
-            flex-direction: wrap;
+            flex-direction: row;
+            flex-wrap: wrap;
             align-content: flex-start;
         }
-        .sectionProject {
+        .section {
             background-color: black;
             border-radius: 20px;
             color: white;
@@ -20,7 +20,7 @@
             display: flex;
         }
 
-        a.fill-div-project {
+        a.fill-div {
             display: flex;
             height: 100%;
             width: 100%;
@@ -29,17 +29,24 @@
             justify-content: center;
         }
 
-        .spanProject{
+        .spanBlog{
             color: green;
             font-size: 2rem;
         }
     </style>
 </head>
 <body>
+    {{ $path := .Get "path" }}
+    {{ $path := trim $path "/" }}
+    {{ $relreflink := relref . $path }}
     
-    <div class="containerProject">
-        <div class="sectionProject"><a href="/myProjects/project1" class="fill-div-project"><span class="spanProject">Project1</span></a></div>
-        <div class="sectionProject"><a href="/myProjects/project2" class="fill-div-project"><span class="spanProject">Project2</span></a></div>
+    <div class="container">
+        <div class="section"><a href="/myProjects/project1" class="fill-div"><span class="spanBlog">Project1</span></a></div>
+        <div class="section"><a href="/myProjects/project2" class="fill-div"><span class="spanBlog">Project2</span></a></div>
+        <div class="section"><a href="/myProjects/project3" class="fill-div"><span class="spanBlog">Project3</span></a></div>
+        <div class="section"><a href="/myProjects/project4" class="fill-div"><span class="spanBlog">Project4</span></a></div>
     </div>
 </body>
 </html>
+
+ 
