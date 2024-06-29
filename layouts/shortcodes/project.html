@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .containerProject{
+            display: flex;
+            width: 100%;
+            flex-direction: wrap;
+            align-content: flex-start;
+        }
+        .sectionProject {
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+            height: 300px;
+            width: 50%;
+            border: 10px solid rgb(56, 48, 48);
+            font-size: 2rem;
+            display: flex;
+        }
+
+        a.fill-div-project {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spanProject{
+            color: green;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="containerProject">
+        <div class="sectionProject"><a href="/myProjects/project1" class="fill-div-project"><span class="spanProject">Project1</span></a></div>
+        <div class="sectionProject"><a href="/myProjects/project2" class="fill-div-project"><span class="spanProject">Project2</span></a></div>
+    </div>
+</body>
+</html>

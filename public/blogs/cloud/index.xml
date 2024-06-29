@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  on Home</title>
+    <link>http://localhost:1313/blogs/cloud/</link>
+    <description>Recent content in   on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/blogs/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploying a machine learning Model with AWS Sagemaker</title>
+      <link>http://localhost:1313/blogs/cloud/awssagemaker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/cloud/awssagemaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Understanding Job Bookmarks in AWS Glue</title>
+      <link>http://localhost:1313/blogs/cloud/gluejobbookmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/cloud/gluejobbookmark/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

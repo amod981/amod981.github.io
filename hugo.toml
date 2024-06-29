@@ -10,13 +10,13 @@ theme = 'ananke'
     weight = 10
   [[menus.main]]
     name = 'Blogs'
-    pageRef = '/Blogs/_index.md'
+    pageRef = '/Blogs/index.md'
     weight = 30
   [[menus.main]]
     name = 'Projects'
     pageRef = '/myProjects'
     weight = 40
   [[menus.main]]
-    name = 'Certifications'
-    pageRef = '/Certification/certification.md'
+    name = 'Resume'
+    url = '/About/Resume.pdf'
     weight = 50

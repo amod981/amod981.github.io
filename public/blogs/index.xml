@@ -7,33 +7,5 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Creating a Chatbot Using Langchain</title>
-      <link>http://localhost:1313/blogs/ai/blog1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/ai/blog1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Deploying a machine learning Model with AWS Sagemaker</title>
-      <link>http://localhost:1313/blogs/cloud/awssagemaker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/cloud/awssagemaker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Understanding Embeddings and Its Usecases</title>
-      <link>http://localhost:1313/blogs/ai/embeddingsintroduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/ai/embeddingsintroduction/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Understanding Job Bookmarks in AWS Glue</title>
-      <link>http://localhost:1313/blogs/cloud/gluejobbookmark/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/cloud/gluejobbookmark/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

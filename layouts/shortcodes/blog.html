@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        .section {
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+            height: 300px;
+            width: 33.33%;
+            border: 10px solid rgb(56, 48, 48);
+            font-size: 2rem;
+            display: flex;
+        }
+
+        a.fill-div {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spanBlog{
+            color: green;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    {{ $path := .Get "path" }}
+    {{ $path := trim $path "/" }}
+    {{ $relreflink := relref . $path }}
+    
+    <div class="container">
+        <div class="section"><a href="/blogs/ml" class="fill-div"><span class="spanBlog">ML</span></a></div>
+        <div class="section"><a href="/blogs/ai" class="fill-div"><span class="spanBlog">AI and LLM</span></a></div>
+        <div class="section"><a href="/blogs/stats" class="fill-div"><span class="spanBlog">Statistics</span></a></div>
+        <div class="section"><a href="/blogs/cloud" class="fill-div"><span class="spanBlog">AWS Cloud</span></a></div>
+        <div class="section"><a href="/blogs/regex" class="fill-div"><span class="spanBlog">Regex</span></a></div>
+        <div class="section"><a href="/blogs/others" class="fill-div"><span class="spanBlog">Others</span></a></div>
+    </div>
+</body>
+</html>
