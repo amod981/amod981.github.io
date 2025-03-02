@@ -16,8 +16,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set homepage in package.json
+        run: jq '.homepage="https://amod981.github.io"' package.json > temp.json && mv temp.json package.json
+
       - name: Build React app
-        run: HOMEPAGE=https://amod981.github.io npm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
