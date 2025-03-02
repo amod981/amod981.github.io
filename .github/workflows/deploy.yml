@@ -19,6 +19,9 @@ jobs:
       - name: Set homepage in package.json
         run: jq '.homepage="https://amod981.github.io"' package.json > temp.json && mv temp.json package.json
 
+      - name: Log package.json homepage
+        run: cat package.json | grep homepage
+
       - name: Build React app
         run: npm run build
 
