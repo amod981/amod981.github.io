@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "https://amod981.github.io/static/css/main.cd269093.css",
-    "main.js": "https://amod981.github.io/static/js/main.8dcde68a.js",
-    "index.html": "https://amod981.github.io/index.html",
-    "main.cd269093.css.map": "https://amod981.github.io/static/css/main.cd269093.css.map",
-    "main.8dcde68a.js.map": "https://amod981.github.io/static/js/main.8dcde68a.js.map"
+    "main.css": "/static/css/main.cd269093.css",
+    "main.js": "/static/js/main.8dcde68a.js",
+    "index.html": "/index.html",
+    "main.cd269093.css.map": "/static/css/main.cd269093.css.map",
+    "main.8dcde68a.js.map": "/static/js/main.8dcde68a.js.map"
   },
   "entrypoints": [
     "static/css/main.cd269093.css",
