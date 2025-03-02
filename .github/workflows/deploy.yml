@@ -17,7 +17,7 @@ jobs:
         run: npm install
 
       - name: Build React app
-        run: PUBLIC_URL=https://amod981.github.io npm run build
+        run: HOMEPAGE=https://amod981.github.io npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
