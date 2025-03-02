@@ -1,0 +1,39 @@
+.resume-container {
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .download-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .resume-section {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .job, .education {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    padding: 5px 0;
+  }
+  
