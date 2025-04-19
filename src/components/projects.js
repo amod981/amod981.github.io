@@ -5,7 +5,7 @@ function ProjectsPage() {
     {
       title: "AI-Driven Patient Assistant",
       description:
-        "Developed an AI-powered system using OpenAI, DynamoDB & TypeScript, improving patient intent interpretation accuracy by 83%.",
+        "Developed an AI-powered system using OpenAI, DynamoDB & TypeScript, improving patient intent interpretation accuracy by 83%...",
       technologies: ["OpenAI", "DynamoDB", "TypeScript", "Node.js"],
     },
     {
