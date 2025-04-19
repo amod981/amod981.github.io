@@ -45,7 +45,19 @@ function ProjectsPage() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h3>{project.title}</h3>
+            <h3>
+              {project.title === "AI-Driven Patient Assistant" ? (
+                <a
+                  href="https://github.com/amod981/amod981"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.title}
+                </a>
+              ) : (
+                project.title
+              )}
+            </h3>
             <p>{project.description}</p>
             <p>
               <strong>Technologies:</strong> {project.technologies.join(", ")}
