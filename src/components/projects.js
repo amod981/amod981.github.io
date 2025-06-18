@@ -20,7 +20,7 @@ function ProjectsPage() {
     {
       title: "Customer Purchase Prediction",
       description:
-        "Developed a machine learning model for AB InBev to predict new customer purchase probability, achieving 83% test accuracy.",
+        "Developed a machine learning model for AB InBev to predict new customer purchase probability, achieving 83% test accuracy. Also testing stuff.",
       technologies: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
     },
     {
