@@ -4,6 +4,7 @@ import LandingPage from "./components/landingPage";
 import ResumePage from "./components/resume";
 import ProjectsPage from "./components/projects";
 import ContactPage from "./components/contact";
+import RagBlog from "./components/RagBlog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/rag-blog" element={<RagBlog />} />
       </Routes>
     </Router>
   );
