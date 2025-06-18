@@ -1,4 +1,5 @@
 import "./projects.css";
+import { Link } from "react-router-dom";
 
 function ProjectsPage() {
   const projects = [
@@ -7,12 +8,14 @@ function ProjectsPage() {
       description:
         "Developed an AI-powered system using OpenAI, DynamoDB & TypeScript, improving patient intent interpretation accuracy by 83%...",
       technologies: ["OpenAI", "DynamoDB", "TypeScript", "Node.js"],
+      link: "https://github.com/amod981/amod981",
     },
     {
       title: "RAG-Based FAQ System",
       description:
         "Built a retrieval-augmented generation (RAG) framework using Pinecone, OpenAI embeddings, and LangChain, achieving a 92% success rate in generating accurate FAQ responses.",
       technologies: ["Pinecone", "OpenAI", "LangChain"],
+      link: "/rag-blog",
     },
     {
       title: "Customer Purchase Prediction",
@@ -46,14 +49,18 @@ function ProjectsPage() {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <h3>
-              {project.title === "AI-Driven Patient Assistant" ? (
-                <a
-                  href="https://github.com/amod981/amod981"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.title}
-                </a>
+              {project.link ? (
+                project.link.startsWith("http") ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                ) : (
+                  <Link to={project.link}>{project.title}</Link>
+                )
               ) : (
                 project.title
               )}
