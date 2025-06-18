@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://amod981.github.io/static/css/main.5e5c9b59.css",
-    "main.js": "https://amod981.github.io/static/js/main.abda20ed.js",
+    "main.js": "https://amod981.github.io/static/js/main.24f4af43.js",
     "index.html": "https://amod981.github.io/index.html",
     "main.5e5c9b59.css.map": "https://amod981.github.io/static/css/main.5e5c9b59.css.map",
-    "main.abda20ed.js.map": "https://amod981.github.io/static/js/main.abda20ed.js.map"
+    "main.24f4af43.js.map": "https://amod981.github.io/static/js/main.24f4af43.js.map"
   },
   "entrypoints": [
     "static/css/main.5e5c9b59.css",
-    "static/js/main.abda20ed.js"
+    "static/js/main.24f4af43.js"
   ]
 }
