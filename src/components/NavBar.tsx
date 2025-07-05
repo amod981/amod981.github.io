@@ -24,7 +24,7 @@ export default function NavBar() {
               <NavigationMenuLink asChild>
                 <Link
                   to="/home"
-                  className="!text-2xl font-medium text-white hover:underline transition"
+                  className="text-lg font-medium text-white hover:underline transition"
                 >
                   Home
                 </Link>
@@ -34,7 +34,7 @@ export default function NavBar() {
               <NavigationMenuLink asChild>
                 <Link
                   to="/resume"
-                  className="!text-2xl font-medium text-white hover:underline transition"
+                  className="text-lg font-medium text-white hover:underline transition"
                 >
                   Resume
                 </Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
               <NavigationMenuLink asChild>
                 <Link
                   to="/projects"
-                  className="!text-2xl font-medium text-white hover:underline transition"
+                  className="text-lg font-medium text-white hover:underline transition"
                 >
                   Projects
                 </Link>
@@ -54,7 +54,7 @@ export default function NavBar() {
               <NavigationMenuLink asChild>
                 <Link
                   to="/contact"
-                  className="!text-2xl font-medium text-white hover:underline transition"
+                  className="text-lg font-medium text-white hover:underline transition"
                 >
                   Contact
                 </Link>

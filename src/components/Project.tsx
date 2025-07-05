@@ -10,10 +10,10 @@ import {
 
 export default function Project() {
   return (
-    <div className="min-h-screen bg-zinc-900 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#181c2e] to-[#23284a] py-16 px-4">
       <h1 className="text-3xl font-bold text-white mb-10 text-center">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <Card className="bg-zinc-800 rounded-xl p-6 shadow border border-zinc-700 flex flex-col h-full justify-between">
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               RAG-based FAQ System
@@ -26,7 +26,7 @@ export default function Project() {
             Know More
           </Button>
         </Card>
-        <Card className="bg-zinc-800 rounded-xl p-6 shadow border border-zinc-700 flex flex-col h-full justify-between">
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               Big Data Pipeline Orchestration
@@ -39,7 +39,7 @@ export default function Project() {
             Know More
           </Button>
         </Card>
-        <Card className="bg-zinc-800 rounded-xl p-6 shadow border border-zinc-700 flex flex-col h-full justify-between">
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               Sentiment Analysis Using Deberta
@@ -52,7 +52,7 @@ export default function Project() {
             Know More
           </Button>
         </Card>
-        <Card className="bg-zinc-800 rounded-xl p-6 shadow border border-zinc-700 flex flex-col h-full justify-between">
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               Implementing Encoder-Decoder Model for Text Summarization from Scratch
@@ -65,7 +65,7 @@ export default function Project() {
             Know More
           </Button>
         </Card>
-        <Card className="bg-zinc-800 rounded-xl p-6 shadow border border-zinc-700 flex flex-col h-full justify-between">
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               React Based Personal Website
