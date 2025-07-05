@@ -31,4 +31,6 @@ jobs:
 
   end-check:
     runs-on: ubuntu-latest
-    run: echo "Ending the server"
+    steps:
+      - name: End the server
+        run: echo "Ending the server"
