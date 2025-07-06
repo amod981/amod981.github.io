@@ -16,15 +16,17 @@ export default function Project() {
         <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
-              RAG-based FAQ System
+              FloAI
             </CardTitle>
             <CardDescription className="text-zinc-300 text-base text-left max-w-xs">
               Built a retrieval-augmented generation framework with Pinecone & OpenAI, achieving a 92% accuracy rate.
             </CardDescription>
           </CardHeader>
-          <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
-            Know More
-          </Button>
+          <Link to="/FloAIBlogs">
+            <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
+              Know More
+            </Button>
+          </Link>
         </Card>
         <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">

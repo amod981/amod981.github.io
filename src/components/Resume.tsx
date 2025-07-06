@@ -152,14 +152,13 @@ export default function Resume() {
             </CardContent>
           </Card>
         </div>
-        {/* Download Button */}
-        <div className="flex justify-center pt-4">
-          <a href="/cv_amod.pdf" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-8 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
-              Download Resume (PDF)
-            </Button>
-          </a>
-        </div>
+      </div>
+      <div className="flex justify-center pt-8">
+        <Button 
+          className="bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-8 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition"
+        >
+          Download Resume
+        </Button>
       </div>
     </div>
   )
