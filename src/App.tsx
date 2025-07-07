@@ -9,6 +9,9 @@ import Resume from "./components/Resume";
 import Blog2 from "./components/blogs/MyWebsite/Blog2";
 import FloAIBlogs from "./components/blogs/FloAI/FloAIBlogs";
 import FloAIBlog1 from "./components/blogs/FloAI/FloAIBlog1";
+import FloAIBlog2 from "./components/blogs/FloAI/FloAIBlog2";
+import BigDataBlogs from "./components/blogs/BigData/BigDataBlogs";
+import BigDataBlog1 from "./components/blogs/BigData/BigDataBlog1";
 
 export default function App() {
   return (
@@ -25,6 +28,9 @@ export default function App() {
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/FloAIBlogs" element={<FloAIBlogs />} />
         <Route path="/floAIBlog1" element={<FloAIBlog1 />} />
+        <Route path="/FloAIBlog2" element={<FloAIBlog2 />} />
+        <Route path="/bigDataBlogs" element={<BigDataBlogs />} />
+        <Route path="/bigDataBlog1" element={<BigDataBlog1 />} />
       </Routes>
     </>
   );

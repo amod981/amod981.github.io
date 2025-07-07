@@ -1,0 +1,59 @@
+# Making Vector Search Smarter with LLM Context Rewriting
+
+Most QA systems that use vector search rely on embedding similarity. It's a powerful method — but it has a big gap when it comes to real conversations.
+
+Here’s a problem I ran into while building a chat-based health assistant:
+
+> The system can answer "What is the location of the clinic?" perfectly. But when the user just replies with "Where?" — it struggles.
+
+That’s because traditional vector search doesn't understand context like a human. It matches based on static embedding similarity, not conversation history.
+
+---
+
+## Why Regular Embedding Search Fails
+
+In a real chat, the bot might say:
+
+```
+Bot: You're all set. Do visit us at 10.
+User: Where?
+```
+
+If you embed the message "Where?" and do a similarity search, you’ll likely get back irrelevant matches — because "Where?" has almost no information.
+
+That’s the catch: **embedding-based retrieval works best when the query is self-contained.** Short, vague follow-ups break it.
+
+---
+
+## My Solution: Context-Aware Rewriting with LLMs
+
+Here’s what I built:
+
+1. **Run regular embedding search** using the user’s message (e.g., "Where?").
+2. Pass the result and chat history into an **OpenAI function that checks if the retrieved answer logically follows**.
+3. If it fails:
+
+   * Rewrite the vague query into a **clearer version** (e.g., "Where is the clinic located?") using an LLM prompt.
+   * Re-run the embedding search with the rewritten query.
+   * Validate again.
+
+Only if the first pass fails do I use the LLM to enhance the query. This keeps the system **fast and cost-efficient**.
+
+---
+
+## Why This Works
+
+* **Handles real-world vagueness** in chat ("how?", "what now?", "there?")
+* Uses LLMs only when needed — not on every query
+* Bridges retrieval with reasoning in a smart, layered way
+
+It’s like giving your search engine a second chance to understand what the user *really* meant.
+
+---
+
+## Final Thoughts
+
+Vector search isn’t broken — it just needs help sometimes.
+By selectively combining LLMs with traditional retrieval, I was able to create a system that feels **more human**, while still being performant and cost-aware.
+
+If you’re building a conversational AI system, try this kind of fallback logic. It makes a big difference when users stop writing full sentences — which they always do.

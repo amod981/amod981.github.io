@@ -37,9 +37,11 @@ export default function Project() {
               Created a scalable and efficient data pipeline using Apache Airflow, allowing for the automated processing and analysis of large datasets.
             </CardDescription>
           </CardHeader>
-          <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
-            Know More
-          </Button>
+          <Link to="/BigDataBlogs">
+            <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
+              Know More
+            </Button>
+          </Link>
         </Card>
         <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
