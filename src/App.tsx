@@ -12,6 +12,7 @@ import FloAIBlog1 from "./components/blogs/FloAI/FloAIBlog1";
 import FloAIBlog2 from "./components/blogs/FloAI/FloAIBlog2";
 import BigDataBlogs from "./components/blogs/BigData/BigDataBlogs";
 import BigDataBlog1 from "./components/blogs/BigData/BigDataBlog1";
+import BigDataBlog2 from "./components/blogs/BigData/BigDataBlog2";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/FloAIBlog2" element={<FloAIBlog2 />} />
         <Route path="/bigDataBlogs" element={<BigDataBlogs />} />
         <Route path="/bigDataBlog1" element={<BigDataBlog1 />} />
+        <Route path="/bigDataBlog2" element={<BigDataBlog2 />} />
       </Routes>
     </>
   );
