@@ -2,6 +2,8 @@
 
 My personal website — built with React + TypeScript + Vite.
 
+🔗 **Live at [amod981.github.io](https://amod981.github.io/)**
+
 ## 📝 Blogs
 
 Blog posts live as Markdown in [`src/content/`](src/content/) so they read cleanly right here on GitHub and render on the site.
