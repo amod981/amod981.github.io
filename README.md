@@ -23,6 +23,12 @@ Blog posts live as Markdown in [`src/content/`](src/content/) so they read clean
 - [The Update Problem in a Data Lake](src/content/bigdata/the-update-problem-in-a-data-lake.md) — *2026-06-22 · 6 min read*
 - [In a Warehouse, Physical Layout Is the Performance](src/content/bigdata/physical-layout-is-the-performance.md) — *2026-06-18 · 6 min read*
 
+### Systems Design
+
+- [The Cron Job That Ran Five Times](src/content/systems/the-cron-job-that-ran-five-times.md) — *2026-06-28 · 6 min read*
+- [Adding a Second Provider Without the System Noticing](src/content/systems/adding-a-provider-without-the-system-noticing.md) — *2026-06-20 · 5 min read*
+- [Knowing What Happened to a Message You Sent](src/content/systems/knowing-what-happened-to-a-message.md) — *2026-06-14 · 6 min read*
+
 ---
 
 ## Tooling notes

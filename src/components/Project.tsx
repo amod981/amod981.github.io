@@ -27,6 +27,12 @@ const projects = [
       "A multi-region ETL pipeline — orchestrated with Step Functions, incremental ingestion via Apache Hudi, and a Redshift warehouse tuned through deliberate distribution and sort key design.",
     to: "/blogs/bigdata",
   },
+  {
+    title: "Messaging & Scheduling Systems",
+    description:
+      "Backend work on a high-throughput messaging platform — a multi-provider SMS router, idempotent scheduled jobs across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
+    to: "/blogs/systems",
+  },
 ];
 
 export default function Project() {

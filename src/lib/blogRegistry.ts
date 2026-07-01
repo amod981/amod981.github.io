@@ -21,6 +21,7 @@ export const CATEGORY_META: Record<string, { name: string; order: number }> = {
   floai: { name: "Healthcare AI", order: 1 },
   mcp: { name: "MCP / LLM + Data", order: 2 },
   bigdata: { name: "Data Engineering", order: 3 },
+  systems: { name: "Systems Design", order: 4 },
 };
 
 function toEntry(path: string, raw: string): BlogEntry {
