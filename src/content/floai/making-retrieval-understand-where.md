@@ -32,6 +32,18 @@ The approach I settled on treats rewriting as a *fallback*, not a first step:
 
 Most messages never reach step 3. The vague ones do, and for them the rewrite is worth every millisecond.
 
+```mermaid
+flowchart TD
+    M[User message] --> S[Vector search on raw message]
+    S --> C{Coherent with<br/>the conversation?}
+    C -->|yes| DONE[Return result]
+    C -->|no| RW[Rewrite using recent turns]
+    RW --> S2[Search again]
+    S2 --> C2{Coherent now?}
+    C2 -->|yes| DONE
+    C2 -->|no| HO[Return nothing — hand off]
+```
+
 ```ts
 async function retrieveWithContext(message: string, history: Turn[]) {
   // Step 1: cheap path first

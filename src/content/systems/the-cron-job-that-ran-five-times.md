@@ -18,6 +18,14 @@ The instinct is to blame the scheduler. It's not the scheduler's fault. The sche
 
 What the instances lack is a way to agree that *one* of them owns this run. They don't share memory, so the agreement has to live somewhere they all see — a database. The pattern is a **distributed lock**: before doing the work, every instance races to claim a shared marker for this specific run. Exactly one wins. The winner does the work; everyone else sees the marker's already taken and quietly stands down.
 
+```mermaid
+flowchart TD
+    T[Clock ticks on every instance] --> R[Round down to the minute]
+    R --> C{Insert lock for<br/>job + this minute}
+    C -->|insert wins| RUN[Run the job, then release the lock]
+    C -->|insert fails| SKIP[Someone else owns this run<br/>stand down, no error]
+```
+
 Two details make it actually work, and both are easy to get subtly wrong.
 
 **First, the instances have to agree on what "this run" means.** Each computes "now" a few milliseconds apart, so you can't key the lock on a raw timestamp — every instance would compute a slightly different one and they'd all think they're unique. Truncate to the granularity of the schedule. For a per-minute job, round down to the minute, so all five instances compute the *same* key and collide on purpose.

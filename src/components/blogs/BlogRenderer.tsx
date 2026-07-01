@@ -1,6 +1,12 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { parseBlog } from "@/lib/blog";
+import Mermaid from "./Mermaid";
+
+// True when a fenced code block is a ```mermaid diagram.
+function isMermaid(className?: string): boolean {
+  return typeof className === "string" && className.includes("language-mermaid");
+}
 
 /**
  * Renders a raw markdown blog (frontmatter + body) with the site's dark theme.
@@ -58,15 +64,33 @@ export default function BlogRenderer({ raw }: { raw: string }) {
               <a className="text-blue-400 underline hover:text-blue-300" {...props} />
             ),
             hr: ({ ...props }) => <hr className="border-zinc-700 my-6" {...props} />,
-            code: ({ ...props }) => (
-              <code className="rounded bg-zinc-950/70 px-1.5 py-0.5 text-sm text-blue-200" {...props} />
-            ),
-            pre: ({ ...props }) => (
-              <pre
-                className="rounded-lg bg-zinc-950/70 p-4 overflow-x-auto text-sm mb-4"
-                {...props}
-              />
-            ),
+            code: ({ className, children, ...props }) => {
+              if (isMermaid(className)) {
+                return <Mermaid chart={String(children).trim()} />;
+              }
+              return (
+                <code className="rounded bg-zinc-950/70 px-1.5 py-0.5 text-sm text-blue-200" {...props}>
+                  {children}
+                </code>
+              );
+            },
+            pre: ({ children, ...props }) => {
+              // A ```mermaid block renders as a diagram, not styled code —
+              // so don't wrap it in the code-block <pre>.
+              const child = Array.isArray(children) ? children[0] : children;
+              const childClass = (child as { props?: { className?: string } })?.props?.className;
+              if (isMermaid(childClass)) {
+                return <>{children}</>;
+              }
+              return (
+                <pre
+                  className="rounded-lg bg-zinc-950/70 p-4 overflow-x-auto text-sm mb-4"
+                  {...props}
+                >
+                  {children}
+                </pre>
+              );
+            },
             blockquote: ({ ...props }) => (
               <blockquote
                 className="border-l-4 border-blue-500/50 pl-4 italic text-zinc-300 mb-4"

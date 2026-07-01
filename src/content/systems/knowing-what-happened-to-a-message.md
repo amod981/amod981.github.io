@@ -16,10 +16,12 @@ When you hand a message to a provider, a successful API call means one thing onl
 
 So the lifecycle of one message is really a sequence of events, arriving at different times from different directions:
 
-```
-queued  →  accepted by provider  →  delivered   (or: failed / expired / no receipt ever)
-   |               |                     |
-  us            the send            an async receipt, minutes-to-hours later
+```mermaid
+flowchart LR
+    Q[Queued<br/>by us] --> A[Accepted<br/>by provider]
+    A -->|async receipt| D[Delivered]
+    A -->|async receipt| F[Failed]
+    A -->|no receipt in window| U[Stale / Unknown]
 ```
 
 The failure mode of the naive design is that the send path and the receipt path don't know about each other. You send, you forget. The receipt shows up and has nothing to attach itself to. You've thrown away the ability to correlate cause and effect.

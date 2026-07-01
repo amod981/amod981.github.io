@@ -22,18 +22,14 @@ When those constraints live in your head, everything is fine until a step fails 
 
 The shift that mattered was deciding that **the ordering deserves to be modeled explicitly**, not implied by the sequence you happened to trigger things in. So I moved the pipeline into a state machine where each stage is a state and the transitions *are* the dependencies:
 
-```
-discover source data
-        │
-land raw → S3   (full snapshot, then incremental)
-        │
-build staging layer
-        │
-build dimensions
-        │
-build facts        (needs dimension keys)
-        │
-resolve fact dependencies → final load
+```mermaid
+flowchart TD
+    A[Discover source data] --> B[Land raw to S3<br/>full snapshot, then incremental]
+    B --> C[Build staging layer]
+    C --> D[Build dimensions]
+    D --> E[Build facts<br/>needs dimension keys]
+    E --> F[Resolve fact dependencies]
+    F --> G[Final load]
 ```
 
 Now the system itself refuses to start a stage before its prerequisites have succeeded. A failure stops the line instead of quietly feeding half-baked data into whatever comes next. When something breaks, the execution shows me exactly which stage failed and with what input — no log archaeology.
