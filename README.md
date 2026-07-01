@@ -1,4 +1,18 @@
-# React + TypeScript + Vite
+# amod981.github.io
+
+My personal website — built with React + TypeScript + Vite.
+
+## 📝 Blogs
+
+Blog posts live as Markdown in [`src/content/`](src/content/) so they read cleanly right here on GitHub and render on the site.
+
+### Flo AI
+
+- [How I Improved GPT-4o Classification in a RAG System by 42% Without Increasing Risk](src/content/floai/improving-gpt4o-classification.md) — *2024-06-01 · 7 min read*
+
+---
+
+## Tooling notes
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
