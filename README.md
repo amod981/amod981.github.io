@@ -17,6 +17,12 @@ Blog posts live as Markdown in [`src/content/`](src/content/) so they read clean
 - [How to Check an LLM's SQL Before You Run It](src/content/mcp/checking-llm-sql-without-running-it.md) — *2026-06-30 · 5 min read*
 - [Putting OAuth in Front of an MCP Server](src/content/mcp/oauth-in-front-of-an-mcp-server.md) — *2026-07-01 · 6 min read*
 
+### Data Engineering
+
+- [From Hand-Deployed Jobs to an Orchestrated Pipeline](src/content/bigdata/orchestrating-a-lakehouse-with-step-functions.md) — *2026-06-26 · 6 min read*
+- [The Update Problem in a Data Lake](src/content/bigdata/the-update-problem-in-a-data-lake.md) — *2026-06-22 · 6 min read*
+- [In a Warehouse, Physical Layout Is the Performance](src/content/bigdata/physical-layout-is-the-performance.md) — *2026-06-18 · 6 min read*
+
 ---
 
 ## Tooling notes

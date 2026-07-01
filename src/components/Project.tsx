@@ -46,10 +46,10 @@ export default function Project() {
         <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
-              Big Data Pipeline Orchestration
+              Data Lakehouse & Warehouse Pipeline
             </CardTitle>
             <CardDescription className="text-zinc-300 text-base text-left max-w-xs">
-              Created a scalable and efficient data pipeline using Apache Airflow, allowing for the automated processing and analysis of large datasets.
+              A multi-region ETL pipeline — orchestrated with Step Functions, incremental ingestion via Apache Hudi, and a Redshift warehouse tuned through deliberate distribution and sort key design.
             </CardDescription>
           </CardHeader>
           <Link to="/BigDataBlogs">
