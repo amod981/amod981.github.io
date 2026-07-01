@@ -9,14 +9,14 @@ export default function BlogPost() {
 
   if (!entry) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#181c2e] to-[#23284a] text-blue-100 gap-4">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-zinc-950 text-zinc-300 gap-4">
         <p className="text-xl">That post doesn't exist.</p>
-        <Link to="/projects" className="text-blue-400 underline">
+        <Link to="/projects" className="text-blue-400 hover:text-blue-300 underline">
           Back to projects
         </Link>
       </div>
     );
   }
 
-  return <BlogRenderer raw={entry.raw} />;
+  return <BlogRenderer raw={entry.raw} category={entry.category} />;
 }

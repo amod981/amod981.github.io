@@ -8,12 +8,12 @@ export default function BlogList() {
   const posts = getBlogsByCategory(category);
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#181c2e] to-[#23284a] py-12 px-4">
-      <h1 className="text-3xl font-bold text-blue-400 mb-10 text-center">
+    <div className="min-h-screen flex flex-col items-center bg-zinc-950 py-16 px-4">
+      <h1 className="text-3xl font-bold text-zinc-100 mb-10 text-center">
         {categoryName(category)}
       </h1>
       {posts.length === 0 ? (
-        <p className="text-blue-100">No posts here yet.</p>
+        <p className="text-zinc-400">No posts here yet.</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {posts.map((entry) => (

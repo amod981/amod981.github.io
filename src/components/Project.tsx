@@ -37,24 +37,24 @@ const projects = [
 
 export default function Project() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#181c2e] to-[#23284a] py-16 px-4">
-      <h1 className="text-3xl font-bold text-white mb-10 text-center">My Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="min-h-screen bg-zinc-950 py-16 px-4">
+      <h1 className="text-3xl font-bold text-zinc-100 mb-10 text-center">My Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {projects.map((p) => (
           <Card
             key={p.to}
-            className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between"
+            className="bg-zinc-900 rounded-xl p-6 border border-zinc-800 hover:border-zinc-700 transition-colors flex flex-col h-full justify-between"
           >
             <CardHeader className="p-0 mb-2">
-              <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
+              <CardTitle className="text-zinc-100 text-xl font-semibold mb-2 leading-tight text-left">
                 {p.title}
               </CardTitle>
-              <CardDescription className="text-zinc-300 text-base text-left max-w-xs">
+              <CardDescription className="text-zinc-400 text-sm text-left leading-relaxed">
                 {p.description}
               </CardDescription>
             </CardHeader>
             <Link to={p.to}>
-              <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
+              <Button className="mt-5 w-full bg-blue-600 hover:bg-blue-500 text-white font-medium text-base px-6 py-2.5 rounded-lg transition-colors">
                 Know More
               </Button>
             </Link>

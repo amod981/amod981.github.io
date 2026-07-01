@@ -7,33 +7,28 @@ import type { BlogEntry } from "@/lib/blogRegistry";
 export default function BlogCard({ entry }: { entry: BlogEntry }) {
   const { meta, slug } = entry;
   return (
-    <div className="w-[420px] max-w-full rounded-2xl border border-blue-400/20 bg-[#20244a]/80 shadow-xl p-6 flex flex-col h-full justify-between">
-      <div className="flex flex-wrap gap-2 mb-3">
-        <span className="rounded-full bg-blue-900/60 text-blue-200 px-3 py-0.5 text-xs font-semibold">
-          {meta.date}
-        </span>
-        <span className="rounded-full bg-blue-900/60 text-blue-200 px-3 py-0.5 text-xs font-semibold">
-          {meta.readTime}
-        </span>
-      </div>
-      <div className="p-0 mb-2">
-        <div className="text-xl font-bold text-blue-400 mb-1 leading-tight">
+    <div className="w-[420px] max-w-full rounded-xl border border-zinc-800 bg-zinc-900 hover:border-zinc-700 transition-colors p-6 flex flex-col h-full justify-between">
+      <p className="text-xs text-zinc-500 mb-3">
+        {meta.date} · {meta.readTime}
+      </p>
+      <div className="mb-2">
+        <div className="text-xl font-semibold text-zinc-100 mb-1 leading-tight">
           {meta.title}
         </div>
       </div>
-      <div className="text-base text-blue-100 mb-4">{meta.description}</div>
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="text-sm text-zinc-400 mb-4 leading-relaxed">{meta.description}</div>
+      <div className="flex flex-wrap gap-2 mb-5">
         {meta.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-blue-800/60 text-blue-200 px-3 py-0.5 text-xs font-medium"
+            className="rounded-md bg-zinc-800 text-zinc-400 px-2.5 py-0.5 text-xs font-medium"
           >
             {tag}
           </span>
         ))}
       </div>
       <Link to={`/blog/${slug}`}>
-        <Button className="mt-auto bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-base px-6 py-2 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition flex items-center gap-2 w-full justify-center">
+        <Button className="mt-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm px-5 py-2 rounded-lg transition-colors flex items-center gap-2 w-full justify-center">
           Read More <span aria-hidden="true">→</span>
         </Button>
       </Link>

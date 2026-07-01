@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+html {
+  background-color: #09090b; /* zinc-950 — avoids white flash on overscroll */
+  color-scheme: dark; /* dark scrollbars + native form controls */
+}

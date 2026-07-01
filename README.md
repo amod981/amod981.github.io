@@ -21,6 +21,7 @@ Blog posts live as Markdown in [`src/content/`](src/content/) so they read clean
 
 - [From Hand-Deployed Jobs to an Orchestrated Pipeline](src/content/bigdata/orchestrating-a-lakehouse-with-step-functions.md) — *2026-06-26 · 6 min read*
 - [The Update Problem in a Data Lake](src/content/bigdata/the-update-problem-in-a-data-lake.md) — *2026-06-22 · 6 min read*
+- [Every Source Wants a Different Slice of History](src/content/bigdata/every-source-wants-a-different-slice.md) — *2026-06-30 · 6 min read*
 - [In a Warehouse, Physical Layout Is the Performance](src/content/bigdata/physical-layout-is-the-performance.md) — *2026-06-18 · 6 min read*
 
 ### Systems Design
