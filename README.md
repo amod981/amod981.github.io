@@ -6,9 +6,10 @@ My personal website — built with React + TypeScript + Vite.
 
 Blog posts live as Markdown in [`src/content/`](src/content/) so they read cleanly right here on GitHub and render on the site.
 
-### Flo AI
+### Healthcare AI
 
-- [How I Improved GPT-4o Classification in a RAG System by 42% Without Increasing Risk](src/content/floai/improving-gpt4o-classification.md) — *2024-06-01 · 7 min read*
+- [Teaching a Healthcare Assistant to Say "I Don't Know"](src/content/floai/knowing-when-not-to-answer.md) — *2026-06-24 · 5 min read*
+- [Making Retrieval Understand "Where?"](src/content/floai/making-retrieval-understand-where.md) — *2026-06-17 · 5 min read*
 
 ---
 

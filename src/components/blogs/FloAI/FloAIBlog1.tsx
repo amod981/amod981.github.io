@@ -1,4 +1,4 @@
-import raw from "@/content/floai/improving-gpt4o-classification.md?raw";
+import raw from "@/content/floai/knowing-when-not-to-answer.md?raw";
 import BlogRenderer from "../BlogRenderer";
 import { parseBlog } from "@/lib/blog";
 
