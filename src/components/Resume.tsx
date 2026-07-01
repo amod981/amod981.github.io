@@ -1,165 +1,131 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+
+const experience = [
+  {
+    company: "Generated Health",
+    period: "Sep 2023 – Present · London, UK",
+    role: "Data & AI Engineer",
+    bullets: [
+      "Built the company's patient-messaging AI from the ground up — hierarchical intent classification, a retrieval-augmented knowledge base, and a safe human-escalation path — lifting intent-interpretation accuracy by ~86%.",
+      "Designed and built an MCP server that lets an LLM answer analytics questions over the warehouse in natural language, with schema-aware guardrails that validate generated SQL before it runs.",
+      "Owned the MongoDB → S3 → Redshift pipeline end to end: incremental ingestion with Apache Hudi, Step Functions orchestration as code, and a star schema tuned with deliberate distribution and sort keys — cutting average reporting query time by ~35%.",
+    ],
+  },
+  {
+    company: "AB InBev (Capstone with Imperial College)",
+    period: "Jun 2023 – Aug 2023 · London, UK",
+    role: "Data Science Intern",
+    bullets: [
+      "Built a model predicting new-customer purchase probability from early purchase patterns across UK and French markets, reaching 83% test accuracy.",
+      "Ran inferential analysis to surface the market drivers that mattered most, sharpening the purchase-pattern predictions.",
+    ],
+  },
+  {
+    company: "Ola Cabs",
+    period: "Jul 2019 – Aug 2022 · Bangalore, India",
+    role: "Analytics Engineer",
+    bullets: [
+      "Built and ran end-to-end data pipelines with strict SLA and data-quality guarantees, relied on across analytics teams.",
+      "Halved average query time on near-real-time pipelines by reading Presto execution plans and reworking the mapper/reducer logic.",
+      "Built a PySpark application generating engagement features over a 1.2M-user dataset, and a lineage tool that cut dependency-tracing time dramatically.",
+    ],
+  },
+];
+
+const skills: { group: string; items: string[] }[] = [
+  { group: "Languages", items: ["Python", "SQL", "TypeScript", "JavaScript"] },
+  { group: "AI / ML", items: ["OpenAI", "LangChain", "RAG", "PyTorch", "MCP"] },
+  { group: "Data", items: ["Spark", "Apache Hudi", "Redshift", "Kafka", "MongoDB"] },
+  { group: "Cloud & Platform", items: ["AWS", "Step Functions", "Serverless", "Docker"] },
+];
 
 export default function Resume() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#181c2e] to-[#23284a] py-12">
-      <div className="w-full max-w-5xl bg-gradient-to-b from-zinc-900 to-zinc-800 rounded-2xl shadow-xl p-10 text-zinc-100 font-sans space-y-10">
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#181c2e] to-[#23284a] py-16 px-4">
+      <div className="w-full max-w-3xl text-zinc-100">
         {/* Header */}
-        <div className="flex flex-col items-center space-y-2">
+        <header className="mb-12">
           <h1 className="text-4xl font-bold text-blue-400">Amod Shanker</h1>
-          <h2 className="text-xl font-semibold text-blue-200">Data & AI Engineer</h2>
-          <div className="flex flex-wrap gap-4 text-blue-300 text-sm mt-2">
-            <span><a href="https://github.com/amod981" className="hover:text-blue-400 underline">Github</a></span>
-            <span><a href="https://www.linkedin.com/in/amod-shanker-20a0a1187/" className="hover:text-blue-400 underline">LinkedIn</a></span>
-            <span><a href="https://leetcode.com/amod981/" className="hover:text-blue-400 underline">LeetCode</a></span>
-            <span><a href="https://www.hackerrank.com/amod981" className="hover:text-blue-400 underline">HackerRank</a></span>
+          <p className="text-lg text-blue-200 mt-1">Data &amp; AI Engineer · London, UK</p>
+          <p className="text-zinc-300 mt-4 leading-relaxed max-w-2xl">
+            I design and ship production LLM systems and the data platforms behind them —
+            end to end, from ingestion to the model that reads the message.
+          </p>
+          <div className="flex flex-wrap gap-4 mt-5 text-sm">
+            <a href="https://www.linkedin.com/in/amod-shanker-20a0a1187/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">LinkedIn</a>
+            <a href="https://github.com/amod981" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">GitHub</a>
+            <a href="/Amod_Shanker_Resume.pdf" className="text-blue-400 underline hover:text-blue-300">Download CV (PDF)</a>
           </div>
-        </div>
-        {/* Work Experience */}
-        <div>
-          <h3 className="text-2xl font-bold text-blue-300 mb-4">Work Experience</h3>
-          <div className="space-y-6">
-            <Card className="bg-[#20244a]/80 border border-blue-400/20 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-lg text-blue-200">Generated Health Limited <span className="text-sm text-blue-400 font-normal">(Sep 2023 - Current, London, UK)</span></CardTitle>
-                <div className="text-blue-400 font-semibold">Data & AI Engineer</div>
-              </CardHeader>
-              <CardContent className="text-blue-100 space-y-2">
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>Designed and deployed an AI-driven solution using DynamoDB, TypeScript, Node.js, and OpenAI, improving patient intent interpretation accuracy by 83% and reducing processing errors.</li>
-                  <li>Built a Retrieval-Augmented Generation (RAG) framework using Pinecone, OpenAI embeddings, and LangChain, achieving a 92% success rate in generating accurate FAQ responses.</li>
-                  <li>Enhanced legacy code documentation by detailing execution plans and standardizing logging, reducing debugging time by over 50%.</li>
-                  <li>Enhanced and optimized ETL pipelines for migrating MongoDB database records to a data warehouse, achieving 99.9% reliability and reducing processing time by 40% using AWS ETL tools.</li>
-                  <li>Improved the star schema implementation in Amazon Redshift, reducing average query response time by 35% and enhancing reporting with Apache Superset visuals.</li>
-                  <li><span className="font-semibold text-blue-300">Achievement:</span> Engineered and implemented AI from the ground up, transforming Florence into a cutting-edge AI-powered system, achieving an 86% boost in intent interpretation accuracy.</li>
+        </header>
+
+        {/* Experience */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-blue-300 mb-6">Experience</h2>
+          <div className="space-y-8">
+            {experience.map((job) => (
+              <div key={job.company} className="border-l-2 border-blue-500/40 pl-5">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                  <h3 className="text-lg font-semibold text-blue-100">{job.company}</h3>
+                  <span className="text-sm text-blue-400/80">{job.period}</span>
+                </div>
+                <p className="text-blue-400 font-medium text-sm mb-2">{job.role}</p>
+                <ul className="list-disc list-outside ml-5 space-y-1.5 text-zinc-300 leading-relaxed">
+                  {job.bullets.map((b, i) => (
+                    <li key={i}>{b}</li>
+                  ))}
                 </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-[#20244a]/80 border border-blue-400/20 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-lg text-blue-200">AB InBev <span className="text-sm text-blue-400 font-normal">(Jun 2023 - Aug 2023, London, UK)</span></CardTitle>
-                <div className="text-blue-400 font-semibold">Data Science Intern (Capstone Project with Imperial)</div>
-              </CardHeader>
-              <CardContent className="text-blue-100 space-y-2">
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>Developed a machine learning model to predict new customer purchase probability from initial 6-month purchase patterns in UK and French markets, achieving 83% test accuracy.</li>
-                  <li>Conducted inferential analysis to identify key market drivers, improving purchase pattern predictions by 20%.</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-[#20244a]/80 border border-blue-400/20 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-lg text-blue-200">Ola Cabs <span className="text-sm text-blue-400 font-normal">(Jul 2019 - Aug 2022, Bangalore, India)</span></CardTitle>
-                <div className="text-blue-400 font-semibold">Analytics Engineer</div>
-              </CardHeader>
-              <CardContent className="text-blue-100 space-y-2">
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>Designed and implemented end-to-end data processing pipelines, achieving 98% SLA compliance and over 99% data accuracy through rigorous validation and stakeholder collaboration.</li>
-                  <li>Enhanced ETL pipelines by analyzing Presto SQL execution plans and optimizing mapper and reducer logic, achieving a 50% improvement in average query performance for near real-time processing queries.</li>
-                  <li>Built a PySpark-based distributed application to analyze customer data, generating features such as engagement and capacity for a dataset of 1.2 million users, improving model accuracy by 15%.</li>
-                  <li>Developed a lineage tool using Oozie CLI commands, Bash, and Python to track dependencies of production tables, reducing dependency identification time by 80%.</li>
-                  <li><span className="font-semibold text-blue-300">Achievement:</span> Recognized among the most valued performer in Ola Cabs for consecutive years in 2021 and 2022.</li>
-                </ul>
-              </CardContent>
-            </Card>
+              </div>
+            ))}
           </div>
-        </div>
+        </section>
+
         {/* Skills */}
-        <div>
-          <h3 className="text-2xl font-bold text-blue-300 mb-4">Skills</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold text-blue-200 mb-2">Programming & Scripting</h4>
-              <div className="flex flex-wrap gap-3 text-blue-200 text-base">
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Python</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">SQL</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">JavaScript</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">TypeScript</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">R</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Bash</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Regex</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Git</span>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-blue-300 mb-6">Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+            {skills.map((s) => (
+              <div key={s.group}>
+                <h4 className="text-sm font-semibold text-blue-200 mb-1">{s.group}</h4>
+                <p className="text-zinc-300 text-sm">{s.items.join(" · ")}</p>
               </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-blue-200 mb-2">Data & ML</h4>
-              <div className="flex flex-wrap gap-3 text-blue-200 text-base">
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Spark</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">PyTorch</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Scikit-learn</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">OpenAI</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">LangChain</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Pandas</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">NumPy</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Pinecone</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">PySpark</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Hadoop</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Kafka</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Excel</span>
+            ))}
+          </div>
+        </section>
+
+        {/* Education & Certifications */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-2xl font-bold text-blue-300 mb-4">Education</h2>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="text-blue-100 font-semibold">Imperial College Business School</p>
+                <p className="text-zinc-300">MSc Business Analytics — Distinction</p>
+                <p className="text-blue-400/80">2022 – 2023</p>
               </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-blue-200 mb-2">Cloud & Storage</h4>
-              <div className="flex flex-wrap gap-3 text-blue-200 text-base">
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">AWS</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">MongoDB</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">PostgreSQL</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Serverless</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Docker</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Kubernetes</span>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-blue-200 mb-2">Focus Areas</h4>
-              <div className="flex flex-wrap gap-3 text-blue-200 text-base">
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">NLP</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">LLMs</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">Distributed Data Processing</span>
-                <span className="bg-blue-800/60 rounded-full px-4 py-1">System Design</span>
+              <div>
+                <p className="text-blue-100 font-semibold">IIT Madras</p>
+                <p className="text-zinc-300">B.Tech — CGPA 8.46/10</p>
+                <p className="text-blue-400/80">2015 – 2019</p>
               </div>
             </div>
           </div>
+          <div>
+            <h2 className="text-2xl font-bold text-blue-300 mb-4">Certifications</h2>
+            <ul className="space-y-2 text-sm text-zinc-300">
+              <li>AWS Data Engineer Associate <span className="text-blue-400/80">· 2024</span></li>
+              <li>Advanced SQL — HackerRank <span className="text-blue-400/80">· 2022</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <div className="flex justify-center pt-12">
+          <a href="/Amod_Shanker_Resume.pdf">
+            <Button className="bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-base px-8 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
+              Download CV (PDF)
+            </Button>
+          </a>
         </div>
-        {/* Certifications */}
-        <div>
-          <h3 className="text-2xl font-bold text-blue-300 mb-4">Certifications</h3>
-          <ul className="list-disc list-inside ml-4 text-blue-100 space-y-1">
-            <li><span className="font-semibold text-blue-200">AWS Data Engineer Associate</span> – Amazon Web Services, August 2024</li>
-            <li><span className="font-semibold text-blue-200">Advanced SQL</span> – HackerRank, November 2022</li>
-          </ul>
-        </div>
-        {/* Education */}
-        <div>
-          <h3 className="text-2xl font-bold text-blue-300 mb-4">Education</h3>
-          <Card className="bg-[#20244a]/80 border border-blue-400/20 shadow-lg mb-4">
-            <CardHeader>
-              <CardTitle className="text-lg text-blue-200">Imperial College Business School <span className="text-sm text-blue-400 font-normal">(Sep 2022 – Sep 2023, London, UK)</span></CardTitle>
-            </CardHeader>
-            <CardContent className="text-blue-100">
-              MSc Business Analytics<br />
-              Graduated with Distinction (77%) in the MSBA program
-            </CardContent>
-          </Card>
-          <Card className="bg-[#20244a]/80 border border-blue-400/20 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-lg text-blue-200">Indian Institute of Technology Madras <span className="text-sm text-blue-400 font-normal">(Jul 2015 - May 2019, Chennai, India)</span></CardTitle>
-            </CardHeader>
-            <CardContent className="text-blue-100">
-              Bachelor of Technology in Civil Engineering<br />
-              Graduated with a CGPA of 8.46/10<br />
-              Awarded with the Merit-Cum Means scholarship
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-      <div className="flex justify-center pt-8">
-        <Button 
-          className="bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-8 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition"
-        >
-          Download Resume
-        </Button>
       </div>
     </div>
-  )
+  );
 }

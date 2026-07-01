@@ -36,7 +36,7 @@ export default function NavBar() {
                   to="/resume"
                   className="text-lg font-medium text-white hover:underline transition"
                 >
-                  Resume
+                  Experience
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
