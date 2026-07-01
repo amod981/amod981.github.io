@@ -10,6 +10,18 @@ import {
 
 const projects = [
   {
+    title: "Messaging & Scheduling Systems",
+    description:
+      "Backend of a high-throughput messaging platform — a multi-provider SMS router, idempotent scheduled jobs across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
+    to: "/blogs/systems",
+  },
+  {
+    title: "Data Lakehouse & Warehouse Pipeline",
+    description:
+      "A multi-region ETL pipeline — orchestrated with Step Functions, incremental ingestion via Apache Hudi, and a Redshift warehouse tuned through deliberate distribution and sort key design.",
+    to: "/blogs/bigdata",
+  },
+  {
     title: "Healthcare AI Assistant",
     description:
       "A production LLM assistant for patient messaging — hierarchical intent classification, retrieval-augmented answers, and safe escalation to a human when confidence is low.",
@@ -20,18 +32,6 @@ const projects = [
     description:
       "An MCP server that lets an LLM answer natural-language questions over a data warehouse — with per-table documentation as resources and schema-aware SQL guardrails.",
     to: "/blogs/mcp",
-  },
-  {
-    title: "Data Lakehouse & Warehouse Pipeline",
-    description:
-      "A multi-region ETL pipeline — orchestrated with Step Functions, incremental ingestion via Apache Hudi, and a Redshift warehouse tuned through deliberate distribution and sort key design.",
-    to: "/blogs/bigdata",
-  },
-  {
-    title: "Messaging & Scheduling Systems",
-    description:
-      "Backend work on a high-throughput messaging platform — a multi-provider SMS router, idempotent scheduled jobs across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
-    to: "/blogs/systems",
   },
 ];
 

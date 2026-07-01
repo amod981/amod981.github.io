@@ -7,14 +7,17 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-zinc-900 to-gray-800 text-white px-4 pt-20">
       <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
-        <h1 className="text-3xl font-bold text-center mb-6 mt-2">
-          Architecting Intelligent Systems with Scalable AI & Data.
+        <p className="text-sm font-semibold tracking-widest uppercase text-blue-400 mb-3">
+          Backend Engineer · Data &amp; AI
+        </p>
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 mt-1 leading-tight">
+          I design and own the backend systems behind production data and AI.
         </h1>
-        <p className="text-base text-zinc-300 text-center mb-8 max-w-xl">
-          I'm Amod — a backend-focused machine learning engineer with expertise in OpenAI, AWS, and real-time data infrastructure. I build LLM-powered systems and ETL pipelines that drive decision-making at scale.
-          <br />
-          <br />
-          My work blends deep experience in NLP, Big Data Engineering, and Cloud Computing with a strong command of backend engineering and system design. I approach every challenge with a focus on performance, creativity, and clean code.
+        <p className="text-base text-zinc-300 text-center mb-6 max-w-2xl">
+          I've been the sole engineer behind several systems now running in production: the messaging backbone that routes and schedules high volumes of messages, a multi-region pipeline that feeds a data warehouse, a clinical assistant that reads and safely responds to patient messages, and an MCP server that lets a language model query that warehouse in plain English.
+        </p>
+        <p className="text-base text-zinc-300 text-center mb-8 max-w-2xl">
+          The common thread is <span className="text-blue-200 font-medium">backend engineering done properly</span> — event-driven services, idempotent jobs, reliable data flows, and the data modeling underneath. Data and AI are where I apply it; systems that survive contact with production are what I care about.
         </p>
         <div className="w-24 h-1 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 mb-8" />
         <h2 className="text-2xl font-bold text-center mb-2 text-blue-400">
