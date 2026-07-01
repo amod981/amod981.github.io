@@ -11,6 +11,11 @@ Blog posts live as Markdown in [`src/content/`](src/content/) so they read clean
 - [Teaching a Healthcare Assistant to Say "I Don't Know"](src/content/floai/knowing-when-not-to-answer.md) — *2026-06-24 · 5 min read*
 - [Making Retrieval Understand "Where?"](src/content/floai/making-retrieval-understand-where.md) — *2026-06-17 · 5 min read*
 
+### MCP / LLM + Data
+
+- [Giving an LLM a Data Warehouse It Can Actually Query](src/content/mcp/data-warehouse-an-llm-can-query.md) — *2026-06-30 · 6 min read*
+- [How to Check an LLM's SQL Before You Run It](src/content/mcp/checking-llm-sql-without-running-it.md) — *2026-06-30 · 5 min read*
+
 ---
 
 ## Tooling notes

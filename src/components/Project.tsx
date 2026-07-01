@@ -31,6 +31,21 @@ export default function Project() {
         <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
           <CardHeader className="p-0 mb-2">
             <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
+              MCP Analytics Server
+            </CardTitle>
+            <CardDescription className="text-zinc-300 text-base text-left max-w-xs">
+              An MCP server that lets an LLM answer natural-language questions over a data warehouse — with per-table documentation as resources and schema-aware SQL guardrails.
+            </CardDescription>
+          </CardHeader>
+          <Link to="/mcpBlogs">
+            <Button className="mt-4 w-full bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-lg px-6 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
+              Know More
+            </Button>
+          </Link>
+        </Card>
+        <Card className="bg-[#20244a]/80 rounded-xl p-6 shadow border border-blue-400/20 flex flex-col h-full justify-between">
+          <CardHeader className="p-0 mb-2">
+            <CardTitle className="text-white text-xl font-semibold mb-2 leading-tight text-left">
               Big Data Pipeline Orchestration
             </CardTitle>
             <CardDescription className="text-zinc-300 text-base text-left max-w-xs">

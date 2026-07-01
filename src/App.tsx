@@ -13,6 +13,9 @@ import FloAIBlog2 from "./components/blogs/FloAI/FloAIBlog2";
 import BigDataBlogs from "./components/blogs/BigData/BigDataBlogs";
 import BigDataBlog1 from "./components/blogs/BigData/BigDataBlog1";
 import BigDataBlog2 from "./components/blogs/BigData/BigDataBlog2";
+import McpBlogs from "./components/blogs/MCP/McpBlogs";
+import McpBlog1 from "./components/blogs/MCP/McpBlog1";
+import McpBlog2 from "./components/blogs/MCP/McpBlog2";
 
 export default function App() {
   return (
@@ -33,6 +36,9 @@ export default function App() {
         <Route path="/bigDataBlogs" element={<BigDataBlogs />} />
         <Route path="/bigDataBlog1" element={<BigDataBlog1 />} />
         <Route path="/bigDataBlog2" element={<BigDataBlog2 />} />
+        <Route path="/mcpBlogs" element={<McpBlogs />} />
+        <Route path="/mcpBlog1" element={<McpBlog1 />} />
+        <Route path="/mcpBlog2" element={<McpBlog2 />} />
       </Routes>
     </>
   );
