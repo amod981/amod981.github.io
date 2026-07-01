@@ -30,9 +30,7 @@ export default function BlogRenderer({ raw, category }: { raw: string; category?
           </Link>
         )}
 
-        <p className="text-xs text-zinc-500 mb-3">
-          {meta.date} · {meta.readTime}
-        </p>
+        <p className="text-xs text-zinc-500 mb-3">{meta.readTime}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {meta.tags.map((tag) => (
             <span

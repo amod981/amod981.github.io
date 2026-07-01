@@ -12,7 +12,7 @@ export default function Contact() {
             </div>
           </div>
           <h1 className="text-3xl font-bold text-zinc-100 mb-2 text-center">Contact Me</h1>
-          <p className="text-zinc-400 text-center mb-4 max-w-md">Have a question, a role, or just want to say hi? Drop a note below and I'll get back to you.</p>
+          <p className="text-zinc-400 text-center mb-4 max-w-md">Have a question, an interesting problem, or just want to say hi? Drop a note below and I'll get back to you.</p>
           <div className="w-16 h-0.5 rounded-full bg-blue-600 mb-6" />
         </div>
         <form action="https://formspree.io/f/xpwreayj" method="POST" className="space-y-5">

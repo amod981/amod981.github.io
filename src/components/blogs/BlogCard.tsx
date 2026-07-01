@@ -8,9 +8,7 @@ export default function BlogCard({ entry }: { entry: BlogEntry }) {
   const { meta, slug } = entry;
   return (
     <div className="w-[420px] max-w-full rounded-xl border border-zinc-800 bg-zinc-900 hover:border-zinc-700 transition-colors p-6 flex flex-col h-full justify-between">
-      <p className="text-xs text-zinc-500 mb-3">
-        {meta.date} · {meta.readTime}
-      </p>
+      <p className="text-xs text-zinc-500 mb-3">{meta.readTime}</p>
       <div className="mb-2">
         <div className="text-xl font-semibold text-zinc-100 mb-1 leading-tight">
           {meta.title}
