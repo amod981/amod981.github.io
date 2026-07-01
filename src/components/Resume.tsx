@@ -4,8 +4,8 @@ const experience = [
     period: "Sep 2023 – Present · London, UK",
     role: "Backend / Data & AI Engineer",
     bullets: [
-      "Sole engineer on the platform's messaging backend — a multi-provider SMS router, idempotent scheduled jobs that stay correct across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
-      "Owned the MongoDB → S3 → Redshift pipeline end to end: incremental ingestion with Apache Hudi, Step Functions orchestration deployed as code, and a star schema tuned with deliberate distribution and sort keys.",
+      "Led the revamp of the platform's messaging backend — a multi-provider SMS router, idempotent scheduled jobs that stay correct across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
+      "Designed and built the MongoDB → S3 → Redshift pipeline: incremental ingestion with Apache Hudi, Step Functions orchestration deployed as code, and a star schema tuned with deliberate distribution and sort keys.",
       "Built the platform's patient-message AI from the ground up — hierarchical intent classification, a retrieval-augmented knowledge base, and a safe escalation path designed to hand off to a human rather than risk a wrong answer.",
       "Designed and built an MCP server that lets an LLM answer analytics questions over the warehouse in natural language, guarding generated SQL with schema-aware validation before it runs.",
     ],

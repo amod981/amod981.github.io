@@ -14,7 +14,7 @@ export default function HomePage() {
           I design and own the backend systems behind production data and AI.
         </h1>
         <p className="text-base text-zinc-300 text-center mb-6 max-w-2xl">
-          I've been the sole engineer behind several systems now running in production: the messaging backbone that routes and schedules high volumes of messages, a multi-region pipeline that feeds a data warehouse, a clinical assistant that reads and safely responds to patient messages, and an MCP server that lets a language model query that warehouse in plain English.
+          Over the last few years I've led and built several production systems: I drove the revamp of a high-throughput messaging backbone, and designed and built a multi-region data pipeline, a clinical assistant that reads and safely responds to patient messages, and an MCP server that lets a language model query a data warehouse in plain English.
         </p>
         <p className="text-base text-zinc-300 text-center mb-8 max-w-2xl">
           The common thread is <span className="text-blue-200 font-medium">backend engineering done properly</span> — event-driven services, idempotent jobs, reliable data flows, and the data modeling underneath. Data and AI are where I apply it; systems that survive contact with production are what I care about.
