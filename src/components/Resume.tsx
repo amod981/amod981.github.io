@@ -1,14 +1,13 @@
-import { Button } from "@/components/ui/button";
-
 const experience = [
   {
     company: "Generated Health",
     period: "Sep 2023 – Present · London, UK",
-    role: "Data & AI Engineer",
+    role: "Backend / Data & AI Engineer",
     bullets: [
-      "Built the company's patient-messaging AI from the ground up — hierarchical intent classification, a retrieval-augmented knowledge base, and a safe human-escalation path — lifting intent-interpretation accuracy by ~86%.",
-      "Designed and built an MCP server that lets an LLM answer analytics questions over the warehouse in natural language, with schema-aware guardrails that validate generated SQL before it runs.",
-      "Owned the MongoDB → S3 → Redshift pipeline end to end: incremental ingestion with Apache Hudi, Step Functions orchestration as code, and a star schema tuned with deliberate distribution and sort keys — cutting average reporting query time by ~35%.",
+      "Sole engineer on the platform's messaging backend — a multi-provider SMS router, idempotent scheduled jobs that stay correct across horizontally-scaled instances, and a durable message log that reconciles asynchronous delivery receipts.",
+      "Owned the MongoDB → S3 → Redshift pipeline end to end: incremental ingestion with Apache Hudi, Step Functions orchestration deployed as code, and a star schema tuned with deliberate distribution and sort keys.",
+      "Built the platform's patient-message AI from the ground up — hierarchical intent classification, a retrieval-augmented knowledge base, and a safe escalation path designed to hand off to a human rather than risk a wrong answer.",
+      "Designed and built an MCP server that lets an LLM answer analytics questions over the warehouse in natural language, guarding generated SQL with schema-aware validation before it runs.",
     ],
   },
   {
@@ -46,15 +45,15 @@ export default function Resume() {
         {/* Header */}
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-blue-400">Amod Shanker</h1>
-          <p className="text-lg text-blue-200 mt-1">Data &amp; AI Engineer · London, UK</p>
+          <p className="text-lg text-blue-200 mt-1">Backend Engineer · Data &amp; AI · London, UK</p>
           <p className="text-zinc-300 mt-4 leading-relaxed max-w-2xl">
-            I design and ship production LLM systems and the data platforms behind them —
-            end to end, from ingestion to the model that reads the message.
+            I design and own backend systems that run in production — event-driven services,
+            data pipelines, and the AI that sits on top. Most of what I've built, I've built
+            end to end.
           </p>
           <div className="flex flex-wrap gap-4 mt-5 text-sm">
             <a href="https://www.linkedin.com/in/amod-shanker-20a0a1187/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">LinkedIn</a>
             <a href="https://github.com/amod981" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">GitHub</a>
-            <a href="/Amod_Shanker_Resume.pdf" className="text-blue-400 underline hover:text-blue-300">Download CV (PDF)</a>
           </div>
         </header>
 
@@ -117,14 +116,6 @@ export default function Resume() {
             </ul>
           </div>
         </section>
-
-        <div className="flex justify-center pt-12">
-          <a href="/Amod_Shanker_Resume.pdf">
-            <Button className="bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold text-base px-8 py-3 rounded-lg shadow hover:from-blue-600 hover:to-violet-600 transition">
-              Download CV (PDF)
-            </Button>
-          </a>
-        </div>
       </div>
     </div>
   );
