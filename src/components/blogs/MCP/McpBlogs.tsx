@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { McpBlog1Meta } from "./McpBlog1";
 import { McpBlog2Meta } from "./McpBlog2";
+import { McpBlog3Meta } from "./McpBlog3";
 
 const posts = [
   { meta: McpBlog1Meta, to: "/mcpBlog1" },
   { meta: McpBlog2Meta, to: "/mcpBlog2" },
+  { meta: McpBlog3Meta, to: "/mcpBlog3" },
 ];
 
 export default function McpBlogs() {

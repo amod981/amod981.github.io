@@ -15,6 +15,7 @@ Blog posts live as Markdown in [`src/content/`](src/content/) so they read clean
 
 - [Giving an LLM a Data Warehouse It Can Actually Query](src/content/mcp/data-warehouse-an-llm-can-query.md) — *2026-06-30 · 6 min read*
 - [How to Check an LLM's SQL Before You Run It](src/content/mcp/checking-llm-sql-without-running-it.md) — *2026-06-30 · 5 min read*
+- [Putting OAuth in Front of an MCP Server](src/content/mcp/oauth-in-front-of-an-mcp-server.md) — *2026-07-01 · 6 min read*
 
 ---
 

@@ -16,6 +16,7 @@ import BigDataBlog2 from "./components/blogs/BigData/BigDataBlog2";
 import McpBlogs from "./components/blogs/MCP/McpBlogs";
 import McpBlog1 from "./components/blogs/MCP/McpBlog1";
 import McpBlog2 from "./components/blogs/MCP/McpBlog2";
+import McpBlog3 from "./components/blogs/MCP/McpBlog3";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/mcpBlogs" element={<McpBlogs />} />
         <Route path="/mcpBlog1" element={<McpBlog1 />} />
         <Route path="/mcpBlog2" element={<McpBlog2 />} />
+        <Route path="/mcpBlog3" element={<McpBlog3 />} />
       </Routes>
     </>
   );
